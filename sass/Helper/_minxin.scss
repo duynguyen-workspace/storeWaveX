@@ -1,0 +1,46 @@
+// Hàm
+// @function => có return (dự án lớn giống thư viện BS)
+//@mixin => không có return
+
+/**
+Code css tổ chức thành mixin (gần giống hàm)
+Những thành phần UI có đoạn code 
++ giống thuộc tính css
++ khác giá trị
+
+=> mixin có tham số
+*/
+
+//Khai báo mixin
+@mixin styleText($color, $fs, $fw) {
+    color: $color;
+    font-size: $fs;
+    font-weight: $fw;
+}
+
+@mixin styleButton($bg, $pd, $pd2, $border, $radius) {
+    background: $bg;
+    padding: $pd $pd2;
+    border: $border;
+    border-radius: $radius;
+    transition: all 0.5s;
+}
+
+@mixin styleButtonHover($bg, $bd-color, $color) {
+    background: $bg;
+    border-color: $bd-color;
+    color:$color ;
+}
+
+// $screen: tên màn hình cần lấy thông số (large)
+@mixin resposive($screen){
+    @if(map-has-key($map: $breakpoints, $key: $screen)){
+        //tìm thấy màn hình
+        $value: map-get($map: $breakpoints, $key: $screen);
+        //CSS3
+        @media screen and (max-width:$value){
+            @content;
+        }
+    }
+    // @warn("Man hinh khong tim thay")
+}
