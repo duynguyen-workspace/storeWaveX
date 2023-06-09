@@ -7,12 +7,13 @@ $bg-grey: #66696c;
 $heading-color: #252729;
 $border-color: transparent;
 $border-color-light: #e2e6eb;
+$box-color: hsla(0, 0%, 100%, 0.1);
 
 //* FONT SIZE
 $fs-xs: 12px;
-$fs-s: 14px;
-$fs-m: 16px;
-$fs-l: 26px;
+$fs-sm: 14px;
+$fs-md: 16px;
+$fs-lg: 26px;
 $fs-xl: 32px;
 
 /*
@@ -29,41 +30,45 @@ $fs-8: 44px;
 
 //* FONT WEIGHT
 $fw-xs: 200;
-$fw-s: 300;
-$fw-m: 500;
-$fw-l: 700;
+$fw-sm: 300;
+$fw-md: 500;
+$fw-lg: 700;
 $fw-xl: 900;
 
-//letter spacing
+//* LINE HEIGHT
+$lh-sm: 1.333em;
+$lh-md: 1.75em;
+
+//* LETTER SPACING
+/*
+! UNUSED LETTER SPACING
 $ls-1: 0.015rem;
 $ls-2: 0.03rem;
+*/
 
-//Padding
-$pd-1: 25px;
-$pd-2: 225px;
-$pd-3: 13px;
-$pd-4: 44px;
-$pd-5: 100px;
-$pd-6: 8px;
-$pd-7: 60px;
-$pd-8: 150px;
+//* PADDING
+$pd-xs: 10px;
+$pd-sm: 20px;
+$pd-md: 30px;
+$pd-lg: 40px;
+$pd-xl: 50px;
 
-//Margin
-$mg-1: 30px;
-$mg-2: 25px;
-$mg-3: 70px;
-$mg-4: 60px;
+//* MARGIN
+$mg-xs: 10px;
+$mg-sm: 20px;
+$mg-md: 30px;
+$mg-lg: 40px;
+$mg-xl: 50px;
 
-//border
-$bd-1: 2px;
-$bd-2: 8px;
+//* BORDER
+$border-radius: 8px;
 
-//break points
+//* BREAKPOINTS
 $breakpoints: (
     "extra-large": 1200px,
     "large": 992px,
-    "medium": 768px,
-    "small": 576px,
-    "extra-small": 480px,
-    "mini": 375px
+    "medium-large": 768px,
+    "medium-small": 576px,
+    "small": 480px,
+    "extra-small": 375px
 );

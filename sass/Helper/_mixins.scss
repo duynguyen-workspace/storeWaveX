@@ -1,26 +1,24 @@
-// Hàm
-// @function => có return (dự án lớn giống thư viện BS)
-//@mixin => không có return
-
-/**
-Code css tổ chức thành mixin (gần giống hàm)
-Những thành phần UI có đoạn code 
-+ giống thuộc tính css
-+ khác giá trị
-
-=> mixin có tham số
-*/
-
-//Khai báo mixin
+/***
+ *  TODO: configure text style
+ ** @param $color: text color
+ ** @param $fs: text font size
+ ** @param $fw: text font weight
+ */
 @mixin styleText($color, $fs, $fw) {
     color: $color;
     font-size: $fs;
     font-weight: $fw;
 }
 
-@mixin styleButton($bg, $pd, $pd2, $border, $radius) {
+/***
+ *  TODO: configure button style
+ ** @param $color: text color
+ ** @param $fs: text font size
+ ** @param $fw: text font weight
+ */
+@mixin styleButton($bg, $pdY, $pdX, $border, $radius) {
     background: $bg;
-    padding: $pd $pd2;
+    padding: $pdY $pdX;
     border: $border;
     border-radius: $radius;
     transition: all 0.5s;
