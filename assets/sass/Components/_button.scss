@@ -1,27 +1,23 @@
-// .phonebtn-white1 {
-//     @include styleButton(
-//         transparent,
-//         $pd-3 + 0.5,
-//         $pd-4,
-//         2px solid $color-blue-2,
-//         $bd-2
-//     );
-
-//     @include styleText($color-blue-2, $fs-1, $fw-2);
-
-//     &:hover {
-//         @include styleButtonHover($color-blue-2, $color-blue-2, $color-white-3);
-//     }
-// }
-
-// .phonebtn-blue1 {
-//     @include styleButton(
-//         linear-gradient(120deg, $color-blue-4, $color-blue-2),
-//         $pd-3 + 2.5,
-//         $pd-4 + 2,
-//         none,
-//         $bd-2
-//     );
-
-//     @include styleText($color-white-3, $fs-1, $fw-2);
-// }
+.sizeItems{
+    @include styleButton(30px,30px,none,1px solid #ececec,$primary-color);
+    border-radius: 50%;
+    &:hover{
+        color: #ececec;
+        
+    }
+}
+.active{
+    background-color: $primary-color;
+    color: #ececec;
+}
+#minus, #plus{
+    @include styleButton(35px,35px,none,1px solid #ececec,$primary-color);
+}
+.addProduct{
+    @include styleButton(280px,50px,$primary-color,1px solid transparent,$primary-color);
+    transition: all 0.5s;
+    border-radius: 10px;
+    &:hover{
+        color: #ececec;
+    }
+}

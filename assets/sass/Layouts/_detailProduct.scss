@@ -1,0 +1,47 @@
+.detailProduct{
+    .cover{
+        border: 2px solid transparent;
+        img{
+            border-radius: 16px;
+        }
+    }
+    .left__detail {
+        padding: 32px 32px 48px;
+        border: 1px solid #e2e6eb;
+        background-color: #fff;
+        border-radius: 16px;
+    }
+    .left__detail--top, .left__detail--middle{
+        @include formDetail($mg-md + 2, $pd-md, 1px solid #e2e6eb);
+        h5{
+            @include styleTitle($heading-color,$fs-lg - 4,1.364em,$fw-md);
+        }
+    }
+    .left__detail--top{
+        span{
+            @include styleTitle($heading-color,$fs-lg,1.462em,$fw-md);  
+        }
+    }
+    .left__detail--middle{
+        li{
+            list-style: none;
+            span{
+                @include styleTitle($heading-color,$fs-sm,1.143em,$fw-sm);
+            }
+        }
+    }
+    .left__detail--bottom{
+        .groupSize,.groupNumber{
+            margin-bottom: 30px;
+        }
+    }
+    .groupSize{
+        .numberSize{
+            @include flex(center,space-around);
+            
+        }
+    }
+    .groupNumber{
+        display: flex;
+    }
+}

@@ -44,8 +44,111 @@ $ls-2: 0.03rem;
 
 html, body {
   font-family: "Nunito Sans", sans-serif;
-  color: #a9adb1;
+  color: #66696c;
   font-size: 16px;
   font-weight: 300;
   background-color: #fff;
+}
+
+.sizeItems {
+  width: 30px;
+  height: 30px;
+  outline: none;
+  background-color: none;
+  border: 1px solid #ececec;
+  border-radius: 50%;
+}
+.sizeItems:hover {
+  background-color: #0085ff;
+}
+.sizeItems:hover {
+  color: #ececec;
+}
+
+.active {
+  background-color: #0085ff;
+  color: #ececec;
+}
+
+#minus, #plus {
+  width: 35px;
+  height: 35px;
+  outline: none;
+  background-color: none;
+  border: 1px solid #ececec;
+}
+#minus:hover, #plus:hover {
+  background-color: #0085ff;
+}
+
+.addProduct {
+  width: 280px;
+  height: 50px;
+  outline: none;
+  background-color: #0085ff;
+  border: 1px solid transparent;
+  transition: all 0.5s;
+  border-radius: 10px;
+}
+.addProduct:hover {
+  background-color: #0085ff;
+}
+.addProduct:hover {
+  color: #ececec;
+}
+
+.groupNumber #amount {
+  width: 50px;
+  border: 1px solid #ececec;
+  text-align: center;
+}
+
+.detailProduct .cover {
+  border: 2px solid transparent;
+}
+.detailProduct .cover img {
+  border-radius: 16px;
+}
+.detailProduct .left__detail {
+  padding: 32px 32px 48px;
+  border: 1px solid #e2e6eb;
+  background-color: #fff;
+  border-radius: 16px;
+}
+.detailProduct .left__detail--top, .detailProduct .left__detail--middle {
+  margin-bottom: 32px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #e2e6eb;
+}
+.detailProduct .left__detail--top h5, .detailProduct .left__detail--middle h5 {
+  color: #252729;
+  font-size: 22px;
+  line-height: 1.364em;
+  font-weight: 500;
+}
+.detailProduct .left__detail--top span {
+  color: #252729;
+  font-size: 26px;
+  line-height: 1.462em;
+  font-weight: 500;
+}
+.detailProduct .left__detail--middle li {
+  list-style: none;
+}
+.detailProduct .left__detail--middle li span {
+  color: #252729;
+  font-size: 14px;
+  line-height: 1.143em;
+  font-weight: 300;
+}
+.detailProduct .left__detail--bottom .groupSize, .detailProduct .left__detail--bottom .groupNumber {
+  margin-bottom: 30px;
+}
+.detailProduct .groupSize .numberSize {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.detailProduct .groupNumber {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
