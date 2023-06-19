@@ -21,3 +21,90 @@
         color: #ececec;
     }
 }
+.btbAccount{
+    @include styleButton(100%,40px,#eee,1px solid #eee,$primary-color);
+    border-radius: 20px;
+    transition: all 0.5s;
+}
+@include resposive("large") {
+    .detailProduct{
+        .addProduct{
+            @include styleButton(200px,50px,$primary-color,1px solid transparent,$primary-color);
+            transition: all 0.5s;
+            border-radius: 10px;
+            &:hover{
+                color: #ececec;
+            }
+        }
+        .sizeItems{
+            margin-left: 5px;
+            @include styleButton(25px,25px,none,1px solid #ececec,$primary-color);
+            border-radius: 50%;
+            &:hover{
+            color: #ececec;
+            }
+        }
+    }
+}
+@include resposive("medium-large") {
+    .detailProduct{
+        .addProduct{
+            @include styleButton(100%,50px,$primary-color,1px solid transparent,$primary-color);
+            transition: all 0.5s;
+            border-radius: 10px;
+            &:hover{
+                color: #ececec;
+            }
+        }
+        .sizeItems{
+            @include styleButton(50px,50px,none,1px solid #ececec,$primary-color);
+            border-radius: 50%;
+            &:hover{
+            color: #ececec;
+            }
+        }
+    }
+}
+@include resposive("medium-small") {
+    .detailProduct{
+        .addProduct{
+            @include styleButton(100%,50px,$primary-color,1px solid transparent,$primary-color);
+            transition: all 0.5s;
+            border-radius: 10px;
+            &:hover{
+                color: #ececec;
+            }
+        }
+    }
+}
+@include resposive("small") {
+    .detailProduct{
+        .addProduct{
+            @include styleButton(100%,50px,$primary-color,1px solid transparent,$primary-color);
+            transition: all 0.5s;
+            border-radius: 10px;
+            &:hover{
+                color: #ececec;
+            }
+        }
+    }
+}
+@include resposive("extra-small") {
+    .detailProduct{
+        .sizeItems{
+            @include styleButton(30px,30px,none,1px solid #ececec,$primary-color);
+            border-radius: 50%;
+            &:hover{
+            color: #ececec;
+            }
+        }
+        .addProduct{
+            @include styleButton(100%,50px,$primary-color,1px solid transparent,$primary-color);
+            transition: all 0.5s;
+            border-radius: 10px;
+            &:hover{
+                color: #ececec;
+            }
+        }
+    }
+}
