@@ -126,11 +126,6 @@
 @include resposive("medium-large") {
     .account{
         gap:50px;
-        .right__account{
-            width:100%;
-        }
-    }
-    .account{
         .left__account{
             width: 30%;
         }

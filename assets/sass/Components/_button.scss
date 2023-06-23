@@ -26,6 +26,14 @@
     border-radius: 20px;
     transition: all 0.5s;
 }
+.register .btbRegister{
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 4px;
+    @include styleButton(100%,100%,#d9d9d9,none,$primary-color)
+}
 @include resposive("large") {
     .detailProduct{
         .addProduct{
